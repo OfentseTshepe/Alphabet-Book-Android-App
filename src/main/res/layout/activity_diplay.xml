@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tshria002.alphabetbook.diplay"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <RelativeLayout
+        android:layout_width="395dp"
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/LAST"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <Button
+            android:id="@+id/PREV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="60dp"
+            android:background="#FF37D742"
+            android:text="PREV" />
+
+        <Button
+            android:id="@+id/FIRST"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Over"
+            android:layout_alignStart="@+id/Over"
+            android:layout_marginBottom="8dp"
+            android:background="#FF37D742"
+            android:text="FIRST" />
+
+        <Button
+            android:id="@+id/NEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/PREV"
+            android:layout_alignBottom="@+id/PREV"
+            android:layout_alignParentEnd="true"
+            android:background="#FF37D742"
+            android:text="NEXT" />
+
+        <Button
+            android:id="@+id/LAST"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/Over"
+            android:layout_below="@+id/NEXT"
+            android:background="#FF37D742"
+            android:text="LAST" />
+
+        <Button
+            android:id="@+id/Over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/PREV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="13dp"
+            android:background="#FF37D742"
+            android:text="OVERVIEW" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
