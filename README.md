@@ -5,4 +5,4 @@ Requirements
 ---
 Java 8 or later 
 
-Anfroid Studio 
+Android Studio 
